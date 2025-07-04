@@ -1,0 +1,103 @@
+/* src/components/Contact.css */
+
+.contact-section {
+  padding: 80px 40px;
+  background-color: var(--bg-clr-1);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 48px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-item .icon {
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-top: 4px;
+}
+
+.contact-item strong {
+  font-size: 16px;
+  color: var(--heading-color);
+}
+
+.contact-item p {
+  margin: 4px 0 0;
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.contact-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--button-text-color);
+  border: none;
+  padding: 14px 18px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1a1a1a;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 22px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}

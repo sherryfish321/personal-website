@@ -1,0 +1,115 @@
+.education-section {
+  padding: 80px 40px;
+  background-color: var(--bg-clr-1);
+}
+
+.section-title {
+  font-size: 32px;
+  color: var(--heading-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid var(--accent-color);
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.timeline-item:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -29px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.school-icon {
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+  margin-top: 6px;
+}
+
+.timeline-info {
+  flex: 1;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--heading-color-3);
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: var(--heading-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  color: var(--accent-color);
+  margin-left: 10px;
+}
+
+.timeline-description {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color-3);
+  line-height: 1.8;
+}
+
+.course-details {
+  margin-top: 8px;
+  padding-left: 110px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  animation: fadeIn 0.4s ease-in-out;
+  line-height: 1.6;
+}
+
+.course-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

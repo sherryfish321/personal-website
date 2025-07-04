@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* index.css */
+:root {
+  --primary-color: #1e90ff;      /* 主色：亮藍 */
+  --secondary-color: #f5f5f5;    /* 次色：淡灰白背景 */
+  --accent-color: #4a6fa5;       /* 補色：深藍 */
+  --text-color: #27374D;         /* 正文文字顏色 */
+  --heading-color: #1a1a1a;      /* 標題文字顏色1：白 */
+  --heading-color-2: #1C658C;      /* 標題文字顏色2：藍 */
+  --heading-color-3: #303841;      /* 標題文字顏色3: 灰*/
+  --bg-clr-1: #eaf4ff;           /* 背景色1：極淡藍 */
+  --bg-clr-2: #ffffff;           /* 背景色2：純白 */
+  --bg-clr-3: #BCCCDC;          /* 背景色3：莫藍 */
+  --button-color: #4592AF;      /* 按鈕背景 */
+  --button-text-color: #ffffff; /* 按鈕文字 */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%; /* 確保 html 也佔據 100% 高度 */
+  overflow-x: hidden; /* 防止 html 元素產生水平滾動條 */
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+
+.web-container {
+    width: 100%;
+       margin: 0 auto;
+       padding: 0 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 22px;
 }

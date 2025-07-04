@@ -1,0 +1,97 @@
+/* Projects.css */
+.projects-section {
+  padding: 80px 40px;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.projects-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;   /* 水平置中整個專案區塊 */
+}
+
+
+.project-item {
+  display: flex;
+  align-items: left;      /* 垂直置中圖文 */
+  justify-content: left;  /* 圖文區塊整體水平置中 */
+  gap: 40px;
+  flex-wrap: wrap;          /* 行動裝置時可換行 */
+  max-width: 1000px;
+  text-align: left;         /* 讓右邊文字靠左 */
+}
+
+
+.project-image img {
+  width: 400px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  align-items: left;      /* 垂直置中圖文 */
+  justify-content: left;  /* 圖文區塊整體水平置中 */
+}
+
+.project-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+
+.project-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.project-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.case-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--button-color);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.case-button:hover {
+  background-color: #4a148c;
+}
+
+.project-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+  font-style: italic;
+}
