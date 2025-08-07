@@ -2,6 +2,8 @@
 
 This repository contains the complete source code for my personal website, developed using **React**, along with supporting technologies such as HTML, CSS, JavaScript, and EmailJS. The site serves as an online portfolio to present my background, professional experience, featured projects, and contact information.
 
+---
+
 ## ⚙️ Technologies Used
 
 The website is built using the following tools and libraries:
