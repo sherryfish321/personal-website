@@ -8,14 +8,14 @@ const projects = [
     subtitle: 'JavaScript / React.js / HTML / CSS',
     description:
       'Built a fully responsive personal portfolio using React.js and CSS modules, featuring animated sections and modular components. The website highlights professional experiences, project case studies, and interactive elements for networking and visibility.',
-    image: '/website.png',
+    image: '/personal-website/website.png',
     caseLink: 'https://github.com/sherryfish321',
   },
   {
     title: 'ATM Locator Chatbot Using Python and Google API, Coding & Co-working Club',
     subtitle: 'Python, Heroku, Git',
     description: 'Developed an ATM locator Line chatbot using Python and Google Maps API, enabling users to find the nearest ATM,based on their bank and current location.',
-    image: '/CC.png',
+    image: '/personal-website/CC.png',
     caseLink: 'https://github.com/sherryfish321',
   },
 ];

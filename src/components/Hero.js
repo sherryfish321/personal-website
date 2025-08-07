@@ -30,11 +30,11 @@ export default function Hero() {
             I'm passionate about building data-driven digital experiences and web applications.
           </p>
           <div className="hero-buttons">
-            <a href="/CV_SherryHuang.pdf" className="btn">Download CV</a>
+            <a href="/personal-website/CV_SherryHuang.pdf" className="btn">Download CV</a>
           </div>
         </div>
         <div className="hero-right">
-          <img src="/my-photo.png" alt="Sherry" className="profile-pic" />
+          <img src="/personal-website/my-photo.png" alt="Sherry" className="profile-pic" />
         </div>
       </div>
     </section>
