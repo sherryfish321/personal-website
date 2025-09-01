@@ -25,7 +25,7 @@ const Experience = () => {
         {/* EY Experience */}
         <div className="timeline-item" data-aos="fade-right" onClick={() => toggleDetails('ey')}>
           <div className="timeline-header">
-            <img src="/EY_logo.png" alt="EY" className="company-icon" />
+            <img src={`${process.env.PUBLIC_URL}/EyLogo.png`} alt="EY" className="company-icon" />
             <div className="timeline-info">
               <span className="timeline-date">Mar 2024 - Jun 2025</span>
               <h3 className="timeline-title">
@@ -55,7 +55,7 @@ const Experience = () => {
         {/* DFI Experience */}
         <div className="timeline-item" data-aos="fade-right" onClick={() => toggleDetails('dfi')}>
           <div className="timeline-header">
-            <img src="/DFI_logo.png" alt="DFI" className="company-icon" />
+            <img src={`${process.env.PUBLIC_URL}/DfiLogo.png`} alt="DFI" className="company-icon" />
             <div className="timeline-info">
               <span className="timeline-date">Jul 2023 - Oct 2023</span>
               <h3 className="timeline-title">

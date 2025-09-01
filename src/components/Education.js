@@ -29,7 +29,7 @@ const Education = () => {
         <div className="timeline-item" data-aos="fade-right" onClick={() => toggleDetails('upenn')}>
           <div className="timeline-header">
             <img
-              src="/UPenn_logo.png"
+              src={`${process.env.PUBLIC_URL}/UpennLogo.png`}
               alt="UPenn"
               className="school-icon"
             />
@@ -59,7 +59,7 @@ const Education = () => {
         <div className="timeline-item" data-aos="fade-right" onClick={() => toggleDetails('nthu')}>
           <div className="timeline-header">
             <img
-              src="/NTHU_logo.png"
+              src={`${process.env.PUBLIC_URL}/NthuLogo.png`}
               alt="NTHU"
               className="school-icon"
             />
