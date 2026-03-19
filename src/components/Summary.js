@@ -10,19 +10,26 @@ const Summary = () => {
 
   return (
     <section className="summary-section" id="summary" data-aos="fade-up">
-      <h2 className="summary-heading">💡Driven by Curiosity, Powered by data 📊</h2>
-      <p className="summary-text">
-        With a foundation in economics and a passion for technology, I bridge the gap between business and computer science to build impactful, data-driven solutions.
-      </p>
-      <div className="summary-cta" data-aos="zoom-in">
-        <a
-          href="https://www.linkedin.com/in/sherry-yh-huang/"
-          target="_blank"
-          rel="noreferrer"
-          className="linkedin-hello-button"
-        >
-          👋 Say Hello on LinkedIn
-        </a>
+      <div className="summary-card">
+        <p className="summary-eyebrow">What drives me</p>
+        <h2 className="summary-heading">Driven by curiosity. Built through data and technology.</h2>
+        <p className="summary-text">
+          With a foundation in economics and a growing computer science background, I enjoy bridging business context,
+          analytics, and software to create thoughtful digital solutions.
+        </p>
+        <div className="summary-actions" data-aos="fade-up" data-aos-delay="100">
+          <a
+            href="https://www.linkedin.com/in/sherry-yh-huang/"
+            target="_blank"
+            rel="noreferrer"
+            className="summary-button summary-button-secondary"
+          >
+            Say Hello on LinkedIn
+          </a>
+          <a href="#contact" className="summary-button summary-button-primary">
+            Let&apos;s Connect
+          </a>
+        </div>
       </div>
     </section>
   );

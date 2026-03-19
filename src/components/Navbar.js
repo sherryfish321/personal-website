@@ -35,7 +35,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        <a href="#home" className="navbar-logo">SHERRY</a>
+        <a href="#home" className="navbar-logo">
+          <span className="navbar-logo-mark">SH</span>
+          <span className="navbar-logo-text">Sherry Huang</span>
+        </a>
         <ul className="navbar-menu">
           <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}>HOME</a></li>
           <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>ABOUT</a></li>
