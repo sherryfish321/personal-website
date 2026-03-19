@@ -150,7 +150,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 22px;
+  margin-bottom: 24px;
 }
 
 .project-tag {
@@ -167,7 +168,6 @@
 }
 
 .case-button {
-  margin-top: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,6 +180,10 @@
   font-weight: 700;
   text-decoration: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.project-back-content .case-button {
+  margin-top: auto;
 }
 
 .case-button:hover {

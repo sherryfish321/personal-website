@@ -10,7 +10,7 @@ const projects = [
       'Built an end-to-end geospatial machine learning pipeline to evaluate transit accessibility and station-level safety risk using large-scale crime and transit data.',
     image: `${process.env.PUBLIC_URL}/transit.png`,
     caseLink: 'https://github.com/sherryfish321/transit-urban-safety',
-    badges: ['150K+ Crime Incidents', '800+ Stations', 'Geospatial ML'],
+    badges: ['150K+ Incidents', '800+ Stations', 'Geospatial ML'],
   },
   {
     title: 'ADVP Curator',
