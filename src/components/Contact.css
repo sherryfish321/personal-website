@@ -73,12 +73,21 @@
 .contact-form input,
 .contact-form textarea {
   background-color: var(--button-text-color);
-  border: none;
+  border: 1px solid transparent;
   padding: 14px 18px;
   border-radius: 30px;
   font-size: 15px;
   font-family: inherit;
   color: #1a1a1a;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(69, 146, 175, 0.5);
+  box-shadow: 0 0 0 4px rgba(69, 146, 175, 0.14);
+  transform: translateY(-1px);
 }
 
 .contact-form textarea {
@@ -95,9 +104,30 @@
   border-radius: 22px;
   cursor: pointer;
   align-self: flex-end;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .contact-form button:hover {
   background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(39, 55, 77, 0.16);
+}
+
+.form-feedback {
+  margin: 0;
+  text-align: right;
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-form button,
+  .form-feedback {
+    align-self: stretch;
+    text-align: left;
+  }
 }

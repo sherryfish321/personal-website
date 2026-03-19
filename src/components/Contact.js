@@ -1,8 +1,15 @@
 // src/components/Contact.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSubmitted(true);
+  };
+
   return (
     <section className="contact-section" id="contact">
       <h2 className="section-title">Get in Touch</h2>
@@ -22,16 +29,21 @@ const Contact = () => {
             <i className="fas fa-envelope icon" />
             <div>
               <strong>Email Address 📩</strong>
-              <p><a href="sherryyhhuang@gmail.com">sherryyhhuang@gmail.com</a></p>
+              <p><a href="mailto:sherryyhhuang@gmail.com">sherryyhhuang@gmail.com</a></p>
             </div>
           </div>
         </div>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
           <textarea placeholder="Your Message" required />
-          <button type="submit">Send Message</button>
+          <button type="submit">{isSubmitted ? 'Message Ready to Send' : 'Send Message'}</button>
+          {isSubmitted && (
+            <p className="form-feedback">
+              Thanks! Your mail app can be opened through the email link on the left.
+            </p>
+          )}
         </form>
       </div>
     </section>

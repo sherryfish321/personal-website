@@ -1,54 +1,86 @@
 import React from 'react';
 import './About.css';
 
+const skillGroups = [
+  {
+    title: 'Languages',
+    items: ['Java', 'Python', 'C/C++', 'JavaScript', 'TypeScript', 'SQL', 'R'],
+  },
+  {
+    title: 'Web & Systems',
+    items: ['React.js', 'Node.js', 'HTML5/CSS3', 'RESTful APIs', 'Flask', 'Express.js', 'Linux'],
+  },
+  {
+    title: 'Data Analytics',
+    items: ['Power BI', 'Tableau', 'Excel', 'MATLAB', 'Matplotlib', 'Power Automate', 'Google Apps Script', 'Google Analytics'],
+  },
+  {
+    title: 'Statistics & Machine Learning',
+    items: ['Regression', 't-test', 'Chi-squared', 'Clustering', 'Predictive Analytics', 'XGBoost', 'Scikit-Learn'],
+  },
+  {
+    title: 'Cloud & Engineering',
+    items: ['Google Cloud Platform', 'BigQuery', 'Vertex AI', 'AWS', 'QuickSight', 'Docker', 'Git/GitHub', 'CI/CD', 'Data Structures', 'Object-Oriented Design', 'Unit Testing'],
+  },
+];
+
 const About = () => {
   return (
     <section className="about-section" id="about">
-      <div className="about-container">
-        {/* 左邊資料區塊 */}
-        <div className="about-left">
-          <h2 className="section-title">About Me</h2>
-          <p className="about-description">
-            Hello! I'm Sherry Huang, a data-driven professional with a passion for
-            creating meaningful digital solutions. I'm currently pursuing a Master's in Computer and Information Technology at the University of Pennsylvania.
-          </p>
-          <div className="about-details">
-            <div className="detail-item"><span>📧 Email:</span> sherryyhhuang@gmail.com</div>
-            <div className="detail-item"><span>📍 Location:</span> Philadelphia, PA</div>
-          </div>
-          <div className="social-links">
-            <a href="https://www.linkedin.com/in/sherry-yh-huang/" target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/sherryfish321" target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://medium.com/@sherry03210321" target="_blank" rel="noreferrer">
-              <i className="fab fa-medium"></i>
-            </a>
-          </div>
+      <div className="about-layout">
+        <div className="about-heading">
+          <h2 className="section-title">
+            About
+            <span>Me</span>
+          </h2>
         </div>
 
-        {/* 右邊技能圖示區塊 */}
-        <div className="about-right">
-          <h3 className="skills-title">Skills</h3>
-          <div className="skills-grid">
-             {/* 官方 Devicon 系列 */}
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
-            {/* 外部來源：非 Devicon */}
-            <img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI" />
-            <img src="https://img.icons8.com/color/96/tableau-software.png" alt="Tableau" />
-            <img src="https://img.icons8.com/color/96/google-analytics.png" alt="Google Analytics" />
-            <img src="https://img.icons8.com/color/96/google-web-search.png" alt="Google Search Console" />
-           </div>
+        <div className="about-content">
+          <article className="about-card">
+            <p className="about-eyebrow">Profile</p>
+            <h3 className="about-name">Sherry Huang</h3>
+            <p className="about-description">
+              I enjoy building thoughtful digital experiences that connect data, design, and problem solving.
+              My background in economics and analytics helps me approach products with both business context and technical curiosity.
+            </p>
+            <p className="about-description">
+              I’m currently pursuing a Master&apos;s in Computer and Information Technology at the University of Pennsylvania,
+              while continuing to grow in software development, data systems, and interactive product thinking.
+            </p>
+
+            <div className="about-meta">
+              <span className="about-pill">Philadelphia, PA</span>
+              <a className="about-pill about-link-pill" href="mailto:sherryyhhuang@gmail.com">sherryyhhuang@gmail.com</a>
+            </div>
+
+            <div className="social-links">
+              <a href="https://www.linkedin.com/in/sherry-yh-huang/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/sherryfish321" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href="https://medium.com/@sherry03210321" target="_blank" rel="noreferrer" aria-label="Medium">
+                <i className="fab fa-medium"></i>
+              </a>
+            </div>
+          </article>
+
+          <article className="skills-card">
+            <p className="about-eyebrow">Skills</p>
+            <div className="skills-groups">
+              {skillGroups.map((group) => (
+                <div className="skill-group" key={group.title}>
+                  <h3 className="skill-group-title">{group.title}</h3>
+                  <div className="skill-pills">
+                    {group.items.map((item) => (
+                      <span className="skill-pill" key={item}>{item}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </article>
         </div>
       </div>
     </section>

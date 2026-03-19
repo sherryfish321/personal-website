@@ -1,5 +1,5 @@
 .hero-section {
-  width: 100％; /* 保證橫向貼齊螢幕 */
+  width: 100%; /* 保證橫向貼齊螢幕 */
   height: 100vh;
   display: flex;
   justify-content: center; /* 水平置中內容 */
@@ -84,4 +84,3 @@
   object-fit: contain;              /* ✅ 顯示整張圖，不裁切 */
   border-radius: 0;                 /* ✅ 取消圓角 */
 }
-

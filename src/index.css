@@ -26,6 +26,7 @@ html {
   width: 100%;
   height: 100%; /* 確保 html 也佔據 100% 高度 */
   overflow-x: hidden; /* 防止 html 元素產生水平滾動條 */
+  scroll-padding-top: 92px;
 }
 
 body {
