@@ -4,6 +4,16 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Analytical Financial Insights Power BI System',
+    subtitle: 'Power BI / Python / Power Automate / Selenium',
+    description:
+      'Designed automated KPI dashboards and financial reporting workflows to support real-time revenue tracking, executive decision-making, and weekly financial strategy insights.',
+    image: `${process.env.PUBLIC_URL}/powerbi.png`,
+    caseLink: 'https://www.notion.so/Analytical-Financial-Insights-A-BI-System-for-Decision-Making-2ea2c3c49dd1800b807ae5d92037d612',
+    linkLabel: 'View Case Study',
+    badges: ['Revenue Tracking', 'Executive Reporting'],
+  },
+  {
     title: 'Transit Accessibility & Urban Safety Modeling',
     subtitle: 'Python / SQL / Machine Learning',
     description:
@@ -13,7 +23,7 @@ const projects = [
     badges: ['150K+ Incidents', '800+ Stations', 'Geospatial ML'],
   },
   {
-    title: 'ADVP Curator',
+    title: 'Biomedical Literature Data Curator',
     subtitle: 'Python / Data Curation / Research Workflow',
     description:
       'Built a curation-focused workflow for organizing domain-specific data with a cleaner structure and more reproducible analysis steps.',
@@ -23,12 +33,12 @@ const projects = [
   },
   {
     title: 'Portfolio',
-    subtitle: 'React.js / TypeScript / JavaScript / HTML / CSS',
+    subtitle: 'React.js / JavaScript / HTML / CSS / EmailJS',
     description:
-      'Designed and developed a responsive personal portfolio that presents experience, projects, and professional identity in a more intentional way.',
+      'Built and maintained a personal portfolio application with modular architecture, responsive user flows, and integrated contact functionality, emphasizing clean UI structure, usability, and long-term maintainability.',
     image: `${process.env.PUBLIC_URL}/Website.png`,
     caseLink: 'https://github.com/sherryfish321/personal-website',
-    badges: ['Responsive UI', 'Animation', 'Component Design'],
+    badges: ['Component Architecture', 'Responsive Frontend', 'EmailJS Integration'],
   },
   {
     title: 'ATM Locator Chatbot',
@@ -95,7 +105,7 @@ const Projects = () => {
                       ))}
                     </div>
                     <a className="case-button" href={project.caseLink} target="_blank" rel="noreferrer">
-                      View Code
+                      {project.linkLabel || 'View Code'}
                     </a>
                   </div>
                 </div>

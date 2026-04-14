@@ -1,6 +1,6 @@
 # React Personal Website
 
-This repository contains the complete source code for my personal website, developed using **React**, along with supporting technologies such as HTML, CSS, JavaScript, and EmailJS. The site serves as an online portfolio to present my background, professional experience, featured projects, and contact information.
+This repository contains the source code for a responsive personal portfolio web application built with **React**, **JavaScript**, **HTML/CSS**, and **EmailJS**. The project showcases my experience, selected projects, and technical background through a component-based frontend architecture designed for usability across desktop and mobile devices.
 
 ---
 
@@ -17,10 +17,11 @@ The website is built using the following tools and libraries:
 
 ## 🚀 Features
 
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop displays.
-- **Portfolio Showcase**: Highlights key projects with descriptions and external links.
-- **Interactive Contact Form**: Visitors can directly message me via EmailJS integration.
-- **Smooth Navigation**: Scroll-based transitions for an enhanced user experience.
+- **Responsive Frontend**: Optimized for mobile, tablet, and desktop viewing.
+- **Component-Based UI**: Built with reusable React components for maintainability and scalability.
+- **Project Showcase**: Highlights selected projects with descriptions, imagery, and external code links.
+- **Contact Workflow Integration**: Supports direct outreach through EmailJS-powered contact functionality.
+- **Interactive Navigation**: Includes section-based navigation and motion effects to improve user experience.
 
 ---
 
